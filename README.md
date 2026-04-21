@@ -1,79 +1,119 @@
-# 🚀 My Portfolio Website
+# 🚀 Utkarsh Thakur — Portfolio Website
 
-Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
+My personal portfolio website showcasing my projects, skills, and experience as a Fullstack Web Developer. Built with Next.js, Three.js, GSAP, and Framer Motion — featuring interactive 3D animations, smooth transitions, and a space-themed UI.
 
-![Portfolio Preview](https://github.com/heyoaryan/new-3d-portfolio/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
+![Portfolio Preview](/public/assets/nav-link-previews/landing.png)
+
+## 🔗 Live Demo
+
+> Coming soon — will be deployed on Vercel.
 
 ## 🔥 Features
 
-- **3D Animations**: Custom-made interactive keyboard using Spline with skills as keycaps that reveal titles and descriptions on hover.
-- **Slick Interactions**: Powered by GSAP and Framer Motion for smooth animations on scroll, hover, and element reveal.
-- **Space Theme**: Particles on a dark background to simulate a cosmic environment, making the experience out of this world.
-- **Responsive Design**: Fully responsive across all devices to ensure the best user experience.
-- **Innovative Web Design**: Combining creativity with functionality to push the boundaries of modern web design.
+- **Interactive 3D Keyboard** — Custom Spline model where each keycap represents a skill, with hover-triggered titles and descriptions
+- **Smooth Animations** — GSAP scroll-based animations, Framer Motion page transitions, and element reveal effects
+- **Space Theme** — Particle effects on a dark cosmic background
+- **Easter Eggs** — Open the dev console and type my name 🧙‍♂️, press `N` for a surprise 🐱
+- **Contact Form** — Server-side email delivery via Resend API
+- **Responsive Design** — Fully optimized across mobile, tablet, and desktop
+- **SEO Optimized** — Structured JSON-LD data, OG tags, Twitter cards, and sitemap
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js, React, Tailwind CSS, Shadcn, Aceternity UI
-- **Animations**: GSAP, Framer Motion, Spline Runtime
-- **Misc**: Resend, Socketio, Zod
+| Category | Technologies |
+|----------|-------------|
+| **Framework** | Next.js 14, React 18, TypeScript |
+| **Styling** | Tailwind CSS, Shadcn UI, Aceternity UI, SCSS Modules |
+| **Animations** | GSAP, Framer Motion, Spline (3D) |
+| **Backend** | Next.js API Routes, Resend (email) |
+| **Other** | Socket.io (remote cursors), Lenis (smooth scroll), Zod |
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                  # Next.js app router pages
+│   ├── about/            # About me page
+│   ├── achievements/     # Experience & education
+│   ├── contact/          # Contact form
+│   ├── craft/            # Freelance services
+│   ├── projects/         # Projects listing
+│   └── api/send/         # Email API route
+├── components/
+│   ├── header/           # Navbar with animated menu + previews
+│   ├── footer/           # Footer navigation
+│   ├── preloader/        # Loading animation
+│   ├── sections/         # Homepage sections (hero, skills, projects, contact)
+│   └── ui/               # Reusable UI components (Shadcn)
+└── data/
+    ├── config.ts          # Site-wide config (name, links, SEO)
+    ├── projects.tsx       # Project data
+    └── constants.ts       # Skills data
+```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v14+)
-- npm or yarn
+- Node.js (v18+)
+- npm
 
 ### Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/heyoaryan/new-3d-portfolio.git
+    git clone https://github.com/utkarshthakur303/portfolio_website-1.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd Portfolio
+    cd portfolio_website-1
     ```
 
 3. Install dependencies:
 
     ```bash
     npm install
-    # or
-    yarn install
     ```
 
 4. Run the development server:
 
     ```bash
     npm run dev
-    # or
-    yarn dev
     ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the magic!
+5. Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+RESEND_API_KEY=your_resend_api_key_here
+```
+
+> The contact form requires a [Resend](https://resend.com) API key to send emails. Without it, the form will show a fallback error with a direct email link.
 
 ## 🚀 Deployment
 
-This site is deployed on Vercel. For your own deployment, follow these steps:
+This site is designed for deployment on **Vercel**:
 
-1. Push your code to a GitHub repository.
-2. Connect your repository to Vercel.
-3. **Add Environment Variables in Vercel Dashboard:**
-   - Go to your project → Settings → Environment Variables
-   - Add `RESEND_API_KEY` with your Resend API key value
-   - Select all environments (Production, Preview, Development)
-4. Vercel will handle the deployment process.
+1. Push your code to GitHub
+2. Connect the repo to [Vercel](https://vercel.com)
+3. Add `RESEND_API_KEY` in **Settings → Environment Variables**
+4. Deploy — Vercel handles the rest
 
-**Note:** The contact form requires `RESEND_API_KEY` to send emails. Make sure to add it in Vercel's environment variables section.
+## 👤 About Me
 
-## 🤝 Contributing
-
-If you'd like to contribute or suggest improvements, feel free to open an issue or submit a pull request. All contributions are welcome!
+- **Name**: Utkarsh Thakur
+- **Role**: Fullstack Web Developer
+- **Education**: B.Tech CSE, Bennett University (2023–2027)
+- **Email**: utkarshthakur3107@gmail.com
+- **GitHub**: [@utkarshthakur303](https://github.com/utkarshthakur303)
+- **LinkedIn**: [utkarsh-bhadauriya](https://www.linkedin.com/in/utkarsh-bhadauriya-535125293/)
+- **Instagram**: [@utkarshthakur303](https://www.instagram.com/utkarshthakur303)
 
 ## 📄 License
 
