@@ -302,7 +302,7 @@ const projects: Project[] = [
     title: "Rebyuu",
     src: "/assets/projects-screenshots/rebyuu/landing.png",
     screenshots: ["landing.png"],
-    live: "#",
+    live: "https://www.rebyuu.app/",
     github: "https://github.com/utkarshthakur303/rebyuu",
     skills: {
       frontend: [
