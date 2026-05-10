@@ -353,5 +353,63 @@ const projects: Project[] = [
       );
     },
   },
+  {
+    id: "jewelhub",
+    category: "E-commerce",
+    title: "JewelHub",
+    src: "/assets/projects-screenshots/jewelhub/landing.png",
+    screenshots: ["landing.png"],
+    live: "https://jewelhub-nine.vercel.app/",
+    github: "https://github.com/utkarshthakur303/jewelhub",
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.framerMotion,
+        PROJECT_SKILLS.js,
+      ],
+      backend: [],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            JewelHub
+          </TypographyP>
+          <TypographyP className="font-mono ">
+            A production-grade luxury jewelry e-commerce frontend built with
+            React, TailwindCSS, and Framer Motion. Features an elegant
+            monochrome aesthetic with champagne gold accents, immersive
+            animations, and a seamless 3-page shopping experience — Home,
+            Collection, and Product Detail. Because great design sells
+            diamonds.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <TypographyH3 className="my-4 mt-8">Features</TypographyH3>
+          <p className="font-mono mb-2">
+            • Luxury dark-theme UI with champagne gold typography and accents
+          </p>
+          <p className="font-mono mb-2">
+            • Smooth page transitions and micro-animations via Framer Motion
+          </p>
+          <p className="font-mono mb-2">
+            • 3-page architecture: Home, Collection &amp; Product Detail
+          </p>
+          <p className="font-mono mb-2">
+            • Fully responsive for mobile, tablet, and desktop
+          </p>
+          <p className="font-mono mb-2">
+            • Premium product cards with hover effects and image galleries
+          </p>
+          <TypographyH3 className="my-4 mt-8">Design Philosophy</TypographyH3>
+          <p className="font-mono mb-2">
+            Crafted to mirror the look and feel of a high-end jewelry brand —
+            every pixel deliberate, every animation purposeful. Monochrome
+            elegance meets modern web engineering.
+          </p>
+        </div>
+      );
+    },
+  },
 ];
 export default projects;
